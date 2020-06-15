@@ -178,25 +178,25 @@ const bubbleSort = async () => {
 
 // Selection Sort Algo..
 
+
 const selectionSort = async () => {
 
  
-  for (let i = 0; i < sortingBar.length; i++) {
+  for (let i = 0; i < sortingBar.length - 1 ; i++) {
 
       for (let j = i + 1; j < sortingBar.length; j++) {
 
   
-          if (getValue(sortingBar[j]) > getValue(sortingBar[j+1])){
+          if (getValue(sortingBar[i]) > getValue(sortingBar[j])){
               await swap(sortingBar[i],sortingBar[j]);
           }
       
       }
      sortedNumber(sortingBar[i])
   }
-
+  sortedNumber(sortingBar[sortingBar.length-1])
  return new Promise( resolve => resolve());
 }
-
 
 
 

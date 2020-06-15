@@ -5,3 +5,5 @@ For now implemented algorithm are :
   2. Selection Sort
   3. Merge Sort
   more soon..
+  
+Live at  : https://mdusmanansari.github.io/Sorting-Visualizer/
